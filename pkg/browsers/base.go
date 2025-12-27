@@ -23,7 +23,12 @@
 //go:generate go run ./gen browsers.yaml
 package browsers
 
-import "github.com/blob42/gosuki/internal/utils"
+import (
+	"github.com/blob42/gosuki/internal/utils"
+	"github.com/blob42/gosuki/pkg/logging"
+)
+
+var log = logging.GetLogger("browsers")
 
 type BrowserFamily uint
 

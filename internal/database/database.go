@@ -454,5 +454,4 @@ func init() {
 	}
 
 	config.RegisterConfigurator("database", config.AsConfigurator(Config))
-
 }

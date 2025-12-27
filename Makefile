@@ -32,7 +32,7 @@ ifdef CI
    TAGS += ci
 endif
 
-BROWSER_PLATFORMS := linux darwin
+BROWSER_PLATFORMS := linux darwin freebsd netbsd openbsd
 BROWSER_DEFS := $(foreach os,$(BROWSER_PLATFORMS),pkg/browsers/defined_browsers_$(os).go)
 
 # TODO: remove, needed for testing mvsqlite
@@ -52,9 +52,9 @@ prepare:
 	@mkdir -p build
 
 
-SED_IN_PLACE = sed -i 
-ifeq ($(OS), darwin)
-	SED_IN_PLACE = sed -i ''
+SED_IN_PLACE = sed -i ''
+ifeq ($(OS), linux)
+	SED_IN_PLACE = sed -i
 endif
 
 release_logging = $(SED_IN_PLACE) 's/LoggingMode = .*/LoggingMode = Release/' pkg/logging/log.go

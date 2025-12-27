@@ -20,16 +20,13 @@
 //  along with gosuki.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-//go:build darwin
+//go:build darwin || netbsd || freebsd || openbsd
 
 package browsers
 
 import (
 	"github.com/blob42/gosuki/internal/utils"
-	"github.com/blob42/gosuki/pkg/logging"
 )
-
-var log = logging.GetLogger("browsers")
 
 // base directory without normalization
 func (b BrowserDef) GetBaseDir() string {

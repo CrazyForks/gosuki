@@ -13,6 +13,15 @@ chrome:
     darwin:
       base_dir: ~/Library/Application Support/Google/Chrome
 
+    freebsd:
+      base_dir: ~/.config/google-chrome
+    netbsd:
+      base_dir: ~/.config/google-chrome
+    openbsd:
+      base_dir: ~/.config/google-chrome
+
+
+
   chromium:
     linux:
       base_dir: ~/.config/chromium
@@ -23,6 +32,14 @@ chrome:
 
     darwin:
       base_dir: ~/Library/Application Support/chromium
+
+    netbsd:
+      base_dir: ~/.config/chromium
+    freebsd:
+      base_dir: ~/.config/chromium
+    openbsd:
+      base_dir: ~/.config/chromium
+
 
   brave:
     linux:
@@ -42,12 +59,26 @@ mozilla:
       flat: ~/.var/app/org.mozilla.firefox/.mozilla/firefox
     darwin:
       base_dir: ~/Library/Application Support/Firefox
+    netbsd:
+      base_dir: ~/.mozilla/firefox
+    freebsd:
+      base_dir: ~/.mozilla/firefox
+    openbsd:
+      base_dir: ~/.mozilla/firefox
+
   librewolf:
     linux:
       base_dir: ~/.librewolf
       flat: ~/.var/app/io.gitlab.librewolf-community/.librewolf
     darwin:
       base_dir: ~/Library/Application Support/Librewolf
+    netbsd:
+      base_dir: ~/.librewolf
+    freebsd:
+      base_dir: ~/.librewolf
+    openbsd:
+      base_dir: ~/.librewolf
+
   waterfox:
     linux:
       base_dir: ~/.waterfox
@@ -77,4 +108,10 @@ other:
   qutebrowser:
     qutebrowser: # flavour
       linux: # platform
+        base_dir: ~/.config/qutebrowser
+      netbsd:
+        base_dir: ~/.config/qutebrowser
+      freebsd:
+        base_dir: ~/.config/qutebrowser
+      openbsd:
         base_dir: ~/.config/qutebrowser

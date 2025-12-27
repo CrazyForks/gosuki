@@ -20,21 +20,16 @@
 //  along with gosuki.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-//go:build linux
-
 package browsers
 
 import (
 	"github.com/blob42/gosuki/internal/utils"
-	"github.com/blob42/gosuki/pkg/logging"
 )
 
 const (
 	Flatpak = "flat"
 	Snap    = "snap"
 )
-
-var log = logging.GetLogger("browsers")
 
 // expands to the full path to the base directory
 // if the package is a snap, use the snap directory

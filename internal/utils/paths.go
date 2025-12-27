@@ -99,7 +99,7 @@ func MkDir(dir string) error {
 	if os.IsNotExist(err) {
 		// dir doesnt exist, create it
 
-		return os.Mkdir(dir, 0775)
+		return os.MkdirAll(dir, 0775)
 	}
 
 	if os.IsPermission(err) {

@@ -84,12 +84,32 @@ mozilla:
       base_dir: ~/.waterfox
       flat: ~/.var/app/net.waterfox.waterfox/.waterfox
 
+  icecat:
+    linux:
+      base_dir: ~/.mozilla/icecat
+
   zen:
     linux:
       base_dir: ~/.zen
       flat: ~/.var/app/app.zen_browser.zen/.zen
     darwin:
       base_dir: ~/Library/Application Support/zen
+
+  palemoon:
+    linux:
+      base_dir: ~/.palemoon
+    darwin:
+      base_dir: ~/Library/Application Support/PaleMoon
+    freebsd:
+      base_dir: ~/.palemoon
+
+  basilisk:
+    linux:
+      base_dir: ~/.basilisk
+    darwin:
+      base_dir: ~/Library/Application Support/Basilisk
+    freebsd:
+      base_dir: ~/.basilisk
 
 
 

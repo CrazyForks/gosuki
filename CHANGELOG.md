@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Distribution packages builds for Arch Linux and Debian
 - [webui]: search bar now allows toggling currently select tag filter
 - BSD platforms support: Gosuki can be built and run on Open/Net/Free-bsd
-- Zen browser support
+- New supported browsers: Zen Browser, IceCat, Pale Moon, Basilisk
 
 #### Adding browsers definitions in a YAML file
 

@@ -24,3 +24,4 @@ generate/generated_imports.go
 *sqlite-wal
 contrib/*.completions
 **/defined_*.go
+__debug_*

@@ -145,6 +145,7 @@ clean:
 	rm -rf build dist
 	rm -f contrib/*.completion
 	rm -f **/**/defined_*.go
+	rm -f __debug_bin*
 
 
 .PHONY: bundle-macos
